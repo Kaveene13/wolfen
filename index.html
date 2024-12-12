@@ -3,219 +3,158 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
     <link rel="stylesheet" href="style.css" />
     <title>WOLFEN</title>
   </head>
   <body>
-    <header data-aos="fade-down" data-aos-delay="200">
-      <div class="container">
-        <div class="content">
-          <div class="logo">
-            <a href="">WOLFEN.</a>
-          </div>
-
-          <nav>
-            <a href="#about">About</a>
-            <a href="#project">Project</a>
-            <a href="#contact">Contact</a>
-          </nav>
-
-          <div class="extra-nav">
-            <a href="#"><span>AVAILABLE FOR WORK</span></a>
-          </div>
-        </div>
+    <header class="py-3 shadow-sm bg-light">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a class="h1 mb-0 text-decoration-none text-dark" href="#">WOLFEN.</a>
+        <nav class="d-none d-md-flex gap-3">
+          <a class="text-dark text-decoration-none" href="#about">About</a>
+          <a class="text-dark text-decoration-none" href="#project">Project</a>
+          <a class="text-dark text-decoration-none" href="#contact">Contact</a>
+        </nav>
+        <a href="#" class="btn btn-outline-primary">AVAILABLE FOR WORK</a>
       </div>
     </header>
 
-    <section class="hero">
+    <section class="hero bg-dark text-white py-5">
+      <div class="container text-center">
+        <h1 class="display-4">WEBSITE</h1>
+        <h2 class="display-5">DEVELOPMENT</h2>
+        <h3 class="h2">WOLFEN</h3>
+        <p class="mt-3">Based in SRI LANKA, KURUNEGALA</p>
+        <p>Freelance Availability: <span class="text-danger">LIMITED HOURS</span></p>
+      </div>
+    </section>
+
+    <section id="about" class="py-5">
       <div class="container">
-        <div class="content">
-          <div class="shape-1"></div>
-          <div class="shape-2"></div>
-          <div class="line"></div>
-
-          <div class="text">
-            <h1 class="row-1" data-aos="fade-right"
-            data-aos-duration="2000">WEBSITE</h1>
-            <h1 class="row-2" data-aos="flip-down" data-aos-duration="2000">DEVELOPMENT</h1>
-            <h1
-              class="row-3"
-              data-aos="fade-left"
-              data-aos-duration="2000"
-            >
-              WOLFEN
-            </h1>
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-4">
+            <h2>About WOLFEN</h2>
+            <p>Sri Lanka-based web development company.</p>
+            <button class="btn btn-primary">Learn More</button>
           </div>
-
-          <box-icon name="chevron-down" class="arrow"></box-icon>
-
-          <div class="short-info">
-            <div
-              class="left-side"
-              data-aos="fade-up-right"
-              data-aos-delay="300"
-            >
-              <h1>Based in SRI LANKA,KURUNEGALA</h1>
-              <p class="time"></p>
-            </div>
-
-            <div
-              class="right-side"
-              data-aos="fade-up-left"
-              data-aos-delay="300"
-            >
-              <p>Freelance Availibility</p>
-              <h1>
-                <div class="pulse"></div>
-                LIMITED HOURS
-              </h1>
-            </div>
+          <div class="col-md-6">
+            <img class="img-fluid rounded" src="image.jpg" alt="profile" />
           </div>
         </div>
       </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="content">
-                <div class="title">
-                    <h2 data-aos="fade-right" data-aos-duration="500" data-aos-delay="300">About <hr></h1>
-                    <h1 data-aos="fade-right" data-aos-duration="500" data-aos-delay="500">WOLFEN</h2>
-                </div>
-                
-                <div class="profile-container" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
-                  <div class="profile">
-                    <img src="image.jpg" alt="profile">
-                  </div>
-                </div>
-                
-                <div class="about-me" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
-                  <p>SRI Lanka web development company.</p>
-                  <button>Learn More <box-icon class="arrow" name='arrow-back'></box-icon></button>
-                </div>
-
-              <div class="text-wrapper" data-aos="flip-up">
-                <div class="text">
-                  <h1>WOLFEN <span>PORTFOLIO</span></h1>
-                  <h1>WOLFEN <span>PORTFOLIO</span></h1>
-                </div>
-                <div class="text">
-                  <h1>WOLFEN <span>PORTFOLIO</span></h1>
-                  <h1>WOLFEN <span>PORTFOLIO</span></h1>
-                </div>
+    <section id="project" class="bg-light py-5">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2>Recent Projects</h2>
+          <p>Check out our work below:</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="project-1.png" alt="Project 1" />
+              <div class="card-body">
+                <h5 class="card-title">WEB DEVELOPMENT</h5>
+                <p class="card-text">E-COMMERCE, PORTFOLIO</p>
               </div>
             </div>
-        </div>
-    </section>
-
-    <section class="project" id="project">
-      <div class="container">
-        <div class="content">
-          <div class="header">
-            <button data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">See All Projects <box-icon class="arrow" name='arrow-back'></box-icon></button>
-
-            <div class="title">
-              <h1 class="row-1" data-aos="fade-left" data-aos-duration="500" data-aos-delay="300"><hr> Recent</h1>
-              <H1 class="row-2" data-aos="fade-left" data-aos-duration="500" data-aos-delay="500">PROJECTS</H1>
-            </div>
           </div>
-
-          <div class="project-area"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-            <div class="projects">
-              <img src="project-1.png" alt="project-1">
-              <div class="desc">
-                <h1>WEB DEVELOPMENT</h1>
-                <p>E-COMMERCE,PORTFOLIO.</p>
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="project-2.png" alt="Project 2" />
+              <div class="card-body">
+                <h5 class="card-title">GRAPHIC DESIGN</h5>
+                <p class="card-text">BANNER, RETOUCHING, POST</p>
               </div>
             </div>
-            <div class="projects">
-              <img src="project-2.png" alt="project-2">
-              <div class="desc">
-                <h1>GRAPHIC DESIGN</h1>
-                <p>BANNER,RETUCHING,POST.</p>
-            </div>
-            </div>
-            <div class="projects">
-              <img src="project-3.png" alt="project-3">
-              <div class="desc">
-                <h1>LOGO DESIGN</h1>
-                <p>COMPANY LOGO,profile.</p>
-            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="project-3.png" alt="Project 3" />
+              <div class="card-body">
+                <h5 class="card-title">LOGO DESIGN</h5>
+                <p class="card-text">COMPANY LOGO, PROFILE</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section id="contact" class="py-5">
       <div class="container">
-        <div class="content">
-          <div class="title" data-aos="fade-down" data-aos-delay="300">
-            <h2>LET'S</h2>
-            <h1>CONNECT</h1>
+        <div class="text-center mb-4">
+          <h2>Let's Connect</h2>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h3>Let's Start Our Story Together</h3>
           </div>
-
-          <div class="contact-area">
-            <div data-aos="fade-right" data-aos-delay="300" class="left-side">
-              <h1>LET'S START</h1>
-              <h1>OUR STORY</h1>
-              <h1>TOGETHER</h1>
-            </div>
-
-            <div class="right-side">
-              <form data-aos="fade-left" data-aos-delay="500">
-                <input type="text" placeholder="YOUR NAME">
-                <input type="text" placeholder="YOUR EMAIL ADDRESS">
-                <textarea placeholder="WHAT CAN I HELP FOR YOU?"></textarea>
-                <button type="submit">SEND</button>
-              </form>
-            </div>
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Email Address"
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  placeholder="What can I help you with?"
+                  rows="4"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </form>
           </div>
         </div>
       </div>
     </section>
 
-    <footer>
-      <div class="container">
-        <div class="content"> 
-          <h1>WOLFEN PORTFOLIO</h1>
-          <div class="social">
-            <div class="logo">
-              <box-icon name='linkedin-square' type='logo' ></box-icon>
-            </div>
-            <div class="logo">
-              <box-icon name='instagram' type='logo' ></box-icon>
-            </div>
-            <div class="logo">
-              <box-icon name='tiktok' type='logo' ></box-icon>
-            </div>
-          </div>
-          <p>&copy; WOLFEN <span id="year"></span></p>
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <p class="mb-1">&copy; WOLFEN <span id="year"></span></p>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="#" class="text-white">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="#" class="text-white">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="#" class="text-white">
+            <i class="bi bi-tiktok"></i>
+          </a>
         </div>
       </div>
     </footer>
 
-    <script src="script.js"></script>
-
-    <!-- Box Icon -->
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    ></script>
     <script>
-      AOS.init();
+      document.getElementById("year").textContent = new Date().getFullYear();
     </script>
   </body>
 </html>
